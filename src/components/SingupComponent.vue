@@ -11,7 +11,7 @@ function dataStore() {
   if (data.username != '' && data.password != '' && data.confermPassword != '') {
     if (data.password === data.confermPassword) {
       localStorage.setItem('userData', JSON.stringify(data))
-      router.push({ path: '/' })
+      router.push({ path: '/dashboard' })
     } else {
       alert('Password and Conferm Password not match')
     }
